@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="twit-div">
+    <h3>{{ request.form.get('twitter_handle') }}</h3>
+    <p>
+        Tweets output saved on your device!
+    </p>
+</div>
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous"
+    />
+    <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous"
+    />
+    <title>Document</title>
+</head>
+<body>
+    {% block content %}
+    <div class="logged-in-box auth0-box logged-in">
+        <!-- <h1 id="logo"><img src="//cdn.auth0.com/samples/auth0_logo_final_blue_RGB.png" /></h1> -->
+            <!-- <img class="avatar" align="middle" src="{{userinfo['picture']}}"/> -->
+            <h3 align = 'center' style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><strong>WELCOME, {{userinfo['name'].upper()}}</strong></h3>
+        <!-- <pre>{{userinfo_pretty}}</pre> -->
+        <br>
+        <br>
+        <form method="POST">
+            <div class="form-group">
+                <label for="twitter_handle">Email Address</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="twitter_handle"
+                  name="twitter_handle"
+                  placeholder="Enter your Twitter handle"
+                />
+              </div>
+              <br>
+              <button type="submit" class="btn btn-outline-primary btn-lg btn-logout btn-block"">Get Twitter Thread</button>
+        </form>
+        <br>
+        <!-- <a class="btn btn-outline-primary btn-lg btn-logout btn-block" href="/twitter-login">Get Twitter Thread</a> -->
+        <a class="btn btn-outline-primary btn-lg btn-logout btn-block" href="/logout">Logout</a>
+    </div>
+    {% endblock %}
+</body>
+</html>
