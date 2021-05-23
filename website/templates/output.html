@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %}Thread-Output{% endblock %}
+{% block content %}
+<p>
+    {% for text in output_file %}
+    {{ text }}
+    {% endfor %}
+</p>
+{% endblock %}
