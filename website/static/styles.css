@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, rgb(34, 197, 137) 19%, rgba(0,212,255,1) 100%);
+}
+
+
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.home-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    min-height: 70vh;
+    width: 65%;
+    border-radius: 20px;
+    background: linear-gradient(45deg, rgb(255 255 255 / 50%), rgb(182 169 255));
+    box-shadow: 0px 10px 13px -7px #000000, 15px 7px 23px -3px rgba(0,0,0,0.82);
+    backdrop-filter: blur(2px);
+}
+
+.home-div>h1{
+    font-size: 60px;
+    text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8, 4px 3px 9px rgba(88,85,85,0.32);
+    color: #000000;
+}
+
+.home-div>img{
+    width: 450px;
+  height: 190px;
+/*   border:2px solid #fff; */
+/*   background: url(img/duck.png) no-repeat; */
+  -moz-box-shadow: 0px 6px 5px #ccc;
+  -webkit-box-shadow: 0px 6px 5px #ccc;
+  box-shadow: 0px 6px 5px #ccc;
+  -moz-border-radius:190px;
+  -webkit-border-radius:190px;
+  border-radius:190px
+}
+
+
+.home-div>h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 50px 0 50px;
+}
+
+.home-div>h3{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 50px 0 50px;
+}
+
+.home-div>a{
+    font-size: 30px;
+    border-radius: 100px;
+    margin: 100px 50px 70px 50px;
+}
+
+
+/*----------------------------*/
+.dash-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    min-height: 70vh;
+    width: 65%;
+    border-radius: 20px;
+    background: linear-gradient(45deg, rgb(255 255 255 / 50%), rgb(182 169 255));
+    box-shadow: 0px 10px 13px -7px #000000, 15px 7px 23px -3px rgba(0,0,0,0.82);
+    backdrop-filter: blur(2px);
+}
+
+.dash-div>.inner-heading{
+    margin: 0px 20px 0px 20px;
+}
+.dash-div>img{
+    border: solid 1px black;
+    border-radius: 100px;
+}
+
+.dash-div>h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 50px 0 50px;
+}
+
+.dash-div>h3{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 50px 0 50px;
+}
+
+.dash-div>a{
+    margin: 10px 50px 10px 50px;
+}
+
+/*----------------------------*/
+
+.twit-div-success{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;;
+    background-color: aquamarine;
+    min-height: 70vh;
+    width: 65%;
+    border-radius: 20px;
+    border-radius: 30px;
+}
+
+.twit-div-fail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;;
+    background-color: rgb(255, 78, 137);
+    min-height: 70vh;
+    width: 65%;
+    border-radius: 20px;
+    border-radius: 30px;
+}
+
+.twit-div-success>h3{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.twit-div-fail>h3{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
