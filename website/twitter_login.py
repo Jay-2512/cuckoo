@@ -96,7 +96,8 @@ def twitter_login(path, app):
 
     @app.route('/login')
     def login():
-        return auth0.authorize_redirect(redirect_uri='http://127.0.0.1:5000/callback')
+        # Your callback url here
+        return auth0.authorize_redirect(redirect_uri='https://cuckoo--bot.herokuapp.com/callback')
 
     def requires_auth(f):
         @wraps(f)
